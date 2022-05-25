@@ -318,14 +318,17 @@ channel.addEventListener('message', event => {
         
 })
 
+//Initial page ma user ID enter garepachi
 const urlFunc = function (value) {
-    let filteredUser = usersList.map((x) => {x.id
+    let filteredUser = usersList.map((x) => {
+       
     if(!x.is_group){
         return x.id
     }else{
         return null
     }
     })
+    
     if(filteredUser.includes(parseInt(value))){
         location.href = `index.html?id=${value}`;
     }
