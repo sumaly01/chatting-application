@@ -142,6 +142,7 @@ const messageFilter = (receiver) => {
     return latestMessage
 }
 const userListing = (searchValue) => {
+    console.log('s')
     document.getElementById('user-list').innerHTML = ''
     let connectedUsersList = usersList.filter((x) => {
         if(userId != x.id && x.connected_users.includes(userId)){
