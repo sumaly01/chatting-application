@@ -141,7 +141,6 @@ const messageFilter = (receiver) => {
     }
     return latestMessage
 }
-
 const userListing = (searchValue) => {
     document.getElementById('user-list').innerHTML = ''
     let connectedUsersList = usersList.filter((x) => {
@@ -151,7 +150,6 @@ const userListing = (searchValue) => {
             return false;
         }
     })
-    
     if(typeof searchValue == 'string'){
         if(searchValue != ''){
             connectedUsersList = connectedUsersList.filter(x => x.name.toLowerCase() == searchValue.toLowerCase())
