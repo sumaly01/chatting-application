@@ -151,6 +151,7 @@ const userListing = (searchValue) => {
             return false;
         }
     })
+    
     if(typeof searchValue == 'string'){
         if(searchValue != ''){
             connectedUsersList = connectedUsersList.filter(x => x.name.toLowerCase() == searchValue.toLowerCase())
