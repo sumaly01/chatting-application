@@ -118,8 +118,8 @@ let message=[
           message: 'How you?'
       }
 ]
-
 const messageFilter = (receiver) => {
+    console.log('ssss')
     let latestMessage=[]
     if(receiver.is_group){
             latestMessage = message.filter((y) => {
@@ -142,7 +142,6 @@ const messageFilter = (receiver) => {
     return latestMessage
 }
 const userListing = (searchValue) => {
-    console.log('s')
     document.getElementById('user-list').innerHTML = ''
     let connectedUsersList = usersList.filter((x) => {
         if(userId != x.id && x.connected_users.includes(userId)){
